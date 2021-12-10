@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
     <style>
+        nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex: auto ;
+        }
+
+            
         h1 {
           color: rgb(215, 184, 236);
           font-family: verdana;
           font-size: 200%;
         }
         p {
-          color: rgb(17, 6, 46);
+          color: rgb(158, 149, 177);
           font-family: verdana;
           font-size: 100%;
         }
@@ -25,40 +32,18 @@
             padding: 20px;
             margin: 50px;
         }
+
         </style>
 
-<body style="background-color:grey;"></body>
-<title> 3DLAB </title>
-    <script>
-            var language; 
-            function getLanguage() {
-            (localStorage.getItem('language') == null) ? setLanguage('en') : false;
-            $.ajax({ 
-            url:  '/language/' +  localStorage.getItem('language') + '.json', 
-            dataType: 'json', async: false, dataType: 'json', 
-            success: function (lang) { language = lang } });
-            }
-            
-            function setLanguage(lang) {
-            localStorage.setItem('language', lang);
-            }
-        </script>
+<body style="background-color:rgb(77, 64, 47);"></body>
+<img src="icons/left_arrow.png" alt="Go back to 3DLAB" width="10" height="10">
+<a href="index.html">
+    <img src="3DLAB.png" alt="Go back to 3DLAB" width="50" height="50">
+</a>
 
-<!-- START TEXT -->
-
-<p class="pc"> &#x1F6A7 Web Under Construction</p>
-<p class="imgcenter"> <img src="3DLAB.png" alt="3DLAB_LOGO" width="100" height="100"> </p>
-<h1>3DLAB</h1>
-
-<p style="text-align:center">Select Languaje </p>
-
-<h2 style="font-family:verdana;" style="background-color:rgba(255, 208, 0, 0.445);">3D_PRINTING</h2>
-<p style="color:red;">RED</p>p
-<p class="pborder">Hello World</p>
-
-<p>3D_PRINT</p>
+<title> 3D_PRINT </title>
+<p class="imgcenter"> <img src="icons/3D PRINT.png" alt="3DLAB_LOGO" width="100" height="100"> </p>
+ 
 </body>
-<a href="#" onclick="setLanguage('en')">English</a> 
-<a href="#" onclick="setLanguage('es')">Spanish</a>
 <div id="div1"></div>
 </html>
