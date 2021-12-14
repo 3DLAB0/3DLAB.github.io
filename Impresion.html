@@ -26,7 +26,17 @@
             margin: 50px;
         }
         </style>
+<script type="text/javascript">
+    var colido_open = 0;
 
+    function show_colido(bool) {
+        if (bool == 0) {
+            document.getElementById("Colido").innerHTML = "Colido_Settings";
+        } else {
+            document.getElementById("Colido").innerHTML = "No_data";
+        }
+}
+</script>
 <body style="background-color:grey;"></body>
 <title> 3DLAB </title>
     <script>
@@ -49,7 +59,11 @@
 <p class="pc"> &#x1F6A7 Web Under Construction</p>
 <p class="imgcenter"> <img src="3DLAB.png" alt="3DLAB_LOGO" width="100" height="100"> </p>
 <h1>3DLAB</h1>
-
+<p id="Colido">HI</p>
+<p>
+    <button type="button" onclick="show_colido(1)">Show Colido Settings</button>
+    <button type="button" onclick="show_colido(0)">Hide Colido Settings</button>
+</p>
 <p style="text-align:center">Select Languaje </p>
 
 <h2 style="font-family:verdana;" style="background-color:rgba(255, 208, 0, 0.445);">3D_PRINTING</h2>
