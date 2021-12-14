@@ -36,8 +36,31 @@
             display: flex;
             align-items: center;
         }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
     
         </style>
+
+<script type="text/javascript">
+    var colido_open = 0;
+
+    function show_colido(bool) {
+        if (bool == 0) {
+            document.getElementById("Colido").innerHTML = "Colido_Settings";
+        } else {
+            document.getElementById("Colido").innerHTML = "No_data";
+        }
+}
+</script>
 
 <body style="background-color:rgb(77, 64, 47);"></body>
 <p class="avpag">
@@ -50,6 +73,13 @@
 <title> 3D_PRINT </title>
 <p class="imgcenter"> <img src="icons/3D PRINT.png" alt="3DLAB_LOGO" width="100" height="100"> </p>
  
+<p id="Colido">HI</p>
+<p>
+    <button class="button" onclick="show_colido(1)">Show Colido Settings</button>
+    <button class="button" onclick="show_colido(0)">Hide Colido Settings</button>
+</p>
+
+
 </body>
 <div id="div1"></div>
 </html>
