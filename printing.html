@@ -44,18 +44,30 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
-        }
-
+            font-size: 16px;}
+        #tablecontent {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: rgb(156, 114, 58);
+            margin-top: 20px;
+                }
     
-        </style>
+    </style>
 
 <script type="text/javascript">
     var colido_open = 0;
 
+    function myfunction()
+{
+    if (document.getElementById("displaytable").style.display === "none")
+        document.getElementById("displaytable").style.display="block";
+    else
+        document.getElementById("displaytable").style.display="none";
+}
     function show_colido(bool) {
         if (bool == 0) {
-            document.getElementById("Colido").innerHTML = "Colido_Settings";
+            document.getElementById("Colido").innerHTML =  <p>s</p> ;
         } else {
             document.getElementById("Colido").innerHTML = "No_data";
         }
@@ -73,10 +85,25 @@
 <title> 3D_PRINT </title>
 <p class="imgcenter"> <img src="icons/3D PRINT.png" alt="3DLAB_LOGO" width="100" height="100"> </p>
  
-<p id="Colido">HI</p>
+<p id="colidosettings">HI</p>
 <p>
-    <button class="button" onclick="show_colido(1)">Show Colido Settings</button>
-    <button class="button" onclick="show_colido(0)">Hide Colido Settings</button>
+    <button class="button" onclick="show_colido_settings()">Show colido Settings</button>
+    <button class="button" onclick="show_colido_settings()">Hide Colido Settings</button>
+    
+<div id="tablecontent">
+    This is my DIV element.
+</div>
+
+    <script>
+        function show_colido_settings(){
+            var x = document.getElementById("tablecontent");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }        
+    </script>
 </p>
 
 
