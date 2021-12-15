@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+    var 
     <style>
-
-            
+        :root{
+            --hexcolor : #37334b;
+        }
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }            
+        .sidebar {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }        
+        .sidebar {
+        float: left;
+        }        
         h1 {
           color: rgb(215, 184, 236);
           font-family: verdana;
@@ -34,13 +52,43 @@
             margin : 80;
             align-content: space-between;
         }
-        div {
+        .purple {
             background-color: rgb(32, 21, 41);
             width: auto;
             border: 5px solid rgb(70, 33, 105);
             padding: 5px;
             margin: 5px;
-}
+        }
+        .hex:before {
+            content: " ";
+            width: 0; height: 0;
+            border-bottom: 30px solid var(--hexcolor);
+            border-left: 52px solid transparent;
+            border-right: 52px solid transparent;
+            position: absolute;
+            top: -30px;
+        }
+
+        .hex {
+            margin-top: 30px;
+            width: 104px;
+            height: 60px;
+            background-color: var(--hexcolor);
+            position:relative;
+            top:50%;
+            left:50%;
+            margin-top:-60px;
+            margin-left:-50px;
+        }
+        .hex:after {
+            content: "";
+            width: 0;
+            position: absolute;
+            bottom: -30px;
+            border-top: 30px solid var(--hexcolor);
+            border-left: 52px solid transparent;
+            border-right: 52px solid transparent;
+        }
         </style>
 
 <body style="background-color:rgb(25, 24, 26);"></body>
@@ -53,20 +101,36 @@
                 url:  '/language/' +  localStorage.getItem('language') + '.json', 
                 dataType: 'json', async: false, dataType: 'json', 
                 success: function (lang) { language = lang } });
-                }
-                
-                function setLanguage(lang) {
+            }
+            
+            function setLanguage(lang) {
                 localStorage.setItem('language', lang);
-                }
+            }
             </script>
 
-    <!-- START TEXT -->
+<!-- START TEXT -->
 
-    <p class="pc"> &#x1F6A7 Web Under Construction</p>
-    <p class="imgcenter"> <img src="3DLAB.png" alt="3DLAB_LOGO" width="100" height="100"> </p>
- 
-    <a href="printing.html"><p style="color:rgb(238, 215, 247)"><p class="imgcenter"> <img src="icons/3D PRINT.png" alt="3DLAB_LOGO" width="100" height="100"></p></a>
-    <div>
+<p class="pc"> &#x1F6A7 Web Under Construction</p>
+<p class="imgcenter"> <img height: 600; src="3DLAB.png" alt="3DLAB_LOGO" width="100" height="100"> </p>
+<a href="printing.html">
+    <p class="imgcenter">
+        <img src="icons/3D PRINT.png" alt="3DLAB_LOGO" width="100" height="100">
+    </p>
+</a>
+<!--
+<p>
+    <div class="hex" >
+        <p class="centerimg" style="position: absolute">
+            <a href="printing.html">
+                <p class="imgcenter">
+                    <img src="icons/3D PRINT.png" alt="3DLAB_LOGO" width="100" height="100">
+                </p>
+            </a>
+        </p>    
+    </div>           
+</p>
+-->
+    <div class="purple">
 
         <p class="pborder" >
             Unete a las discursiones
@@ -74,12 +138,18 @@
                 <a href=https://matrix.to/#/#3DL:matrix.org>
                     <img src="icons/ELEMENT.png" alt="Element" width="50" height="50">
                     
-            </a>
-            
-            <a href=https://discord.gg/vrdHbBPrvB>
+                </a>
+                <a href=https://discord.gg/vrdHbBPrvB>
                 <img src="icons/DISCORD.png" alt="Discord" width="50" height="55">
-            </a></p>
+                </a></p>
         </div>
+
+    <div class="purple">
+        <p class="centerimg" >
+            HASD
+            <br>
+        </p>
+    </div>                     
     <p class="pc">
         <a href="mailto:someone@example.com"><img src="icons/GMAIL.png" alt="Discord" width="40" height="30"></a>
     </p>
@@ -93,5 +163,11 @@
     <a href="#" onclick="setLanguage('en')">English</a> 
     <a href="#" onclick="setLanguage('es')">Spanish</a>
     </p>
+    <!--SIDE-->
+    <p class="sidebar">
+        <a href=https://discord.gg/vrdHbBPrvB>
+            <img src="icons/DISCORD.png" alt="Discord" width="50" height="55">
+        </a>
+    </aside>
 </body>
 </html>
