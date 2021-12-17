@@ -1,80 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
-    <style>
-        nav ul {
-        display: flex;
-        justify-content: space-between;
-        flex: auto ;
-        }
+    <html lang="es">
+    <link rel ="stylesheet" href="style.css" type="text/css" />
 
-            
-        h1 {
-          color: rgb(215, 184, 236);
-          font-family: verdana;
-          font-size: 200%;
-        }
-        p {
-          color: rgb(158, 149, 177);
-          font-family: verdana;
-          font-size: 100%;
-        }
-        .pc {
-            text-align: center;
-            font-family: courier;
-            font-size: 80%;
-        }
-        .imgcenter{
-            text-align: center;
-        }
-        .pborder{
-            border: 2px solid rgb(174, 151, 204);
-            color:rgb(238, 215, 247);
-            padding: 20px;
-            margin: 50px;
-        }
-        .avpag{
-            display: flex;
-            align-items: center;
-        }
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;}
-        #tablecontent {
-            width: 100%;
-            padding: 50px 0;
-            text-align: center;
-            background-color: rgb(156, 114, 58);
-            margin-top: 20px;
-                }
-    
-    </style>
 
-<script type="text/javascript">
-    var colido_open = 0;
+<body style="background-color:rgb(100, 77, 47);"></body>
 
-    function myfunction()
-{
-    if (document.getElementById("displaytable").style.display === "none")
-        document.getElementById("displaytable").style.display="block";
-    else
-        document.getElementById("displaytable").style.display="none";
-}
-    function show_colido(bool) {
-        if (bool == 0) {
-            document.getElementById("Colido").innerHTML =  <p>s</p> ;
-        } else {
-            document.getElementById("Colido").innerHTML = "No_data";
-        }
-}
-</script>
+<script type="text/javascript" src="./js/button.js"></script>
 
-<body style="background-color:rgb(77, 64, 47);"></body>
+
+
 <p class="avpag">
     <img src="icons/left_arrow.png" alt="Go back to 3DLAB" width="10" height="10">
     <a href="index.html">
@@ -84,29 +18,39 @@
 
 <title> 3D_PRINT </title>
 <p class="imgcenter"> <img src="icons/3D PRINT.png" alt="3DLAB_LOGO" width="100" height="100"> </p>
- 
+
+
 <p id="colidosettings">HI</p>
 <p>
     <button class="button" onclick="show_colido_settings()">Show colido Settings</button>
-    <button class="button" onclick="show_colido_settings()">Hide Colido Settings</button>
-    
 <div id="tablecontent">
-    This is my DIV element.
+    <style>
+        p {
+            color: rgb(250, 248, 255);
+            font-family: verdana;
+            font-size: 100%;}
+            </style>
+    <h1>COLIDO X3045</h1>
+    <table class="table_printer">
+        <tr class="tr_printer">
+            <th class="th_printer" style="width:20%;font-size:16px;text-align:left;">Attribute</th>
+            <th class="th_printer" style="width:20%;font-size:16px;text-align:center;color: rgb(255, 0, 0);"> X </th>
+            <th class="th_printer" style="width:20%;font-size:16px;text-align:center;color: rgb(51, 255, 0);"> Y </th>
+            <th class="th_printer" style="width:20%;font-size:16px;text-align:center;color: rgb(0, 81, 255);"> Z </th>
+        </tr>
+        <tr class="tr_printer">
+            <th class="th_printer" style="width:20%;font-size:16px;text-align:left;">Attribute</th>
+            <th class="th_printer" style="width:20%;font-size:16px;text-align:center;color: rgb(255, 0, 0);"> X </th>
+            <th class="th_printer" style="width:20%;font-size:16px;text-align:center;color: rgb(51, 255, 0);"> Y </th>
+            <th class="th_printer" style="width:20%;font-size:16px;text-align:center;color: rgb(0, 81, 255);"> Z </th>
+        </tr>
+        <p>Dimensiones</p>
+
+    </table>
 </div>
 
-    <script>
-        function show_colido_settings(){
-            var x = document.getElementById("tablecontent");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }        
-    </script>
 </p>
 
 
 </body>
-<div id="div1"></div>
 </html>
