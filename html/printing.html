@@ -2,74 +2,79 @@
     <html lang="es">
     <link rel ="stylesheet" href="../style.css" type="text/css" />
 
+<body style="height:100vh;background:linear-gradient(90deg,rgb(59, 47, 66)100px,#cfb76a 150px);"></body>
 
-<body style="background:linear-gradient(45deg,rgb(63, 47, 66),#e2c461);"></body>
+<script src="../js/sidebar.js" type="text/javascript" defer></script>
 
-<script type="text/javascript" src="../js/button.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/css_side.css"/>
+<div class="div_side">
 
+    <script type="text/javascript" src="../js/button.js"></script>
+    
+    
+    
+    <p class="avpag">
+        <img src="../icons/left_arrow.png" alt="Go back to 3DLAB" width="10" height="10">
+        <a href="../index.html">
+            <img src="../3DLAB.png" alt="Go back to 3DLAB" width="50" height="50">
+        </a>
+    </p>
+    
+    <title> 3D_PRINT </title>
 
-
-<p class="avpag">
-    <img src="../icons/left_arrow.png" alt="Go back to 3DLAB" width="10" height="10">
-    <a href="../index.html">
-        <img src="../3DLAB.png" alt="Go back to 3DLAB" width="50" height="50">
-    </a>
-</p>
-
-<title> 3D_PRINT </title>
-
-
-
-<p id="colidosettings">HI</p>
-<p>
-    <!--FIRST TABLE-->
-
-<div class="gridprint-container">
-    <div class="gridprint-item">
-        <button style="background-color: #b17e44;" class="button" onclick="toogle_button('colido_settings')">Show Colido Settings</button>
-        <button style="background-color: #b17e44;" class="button" onclick="toogle_button('colido_settings')"><img src="../img/bq.png" alt="Go back to 3DLAB" width="100" height="100"></button>
-    </div>
-    <div class="gridprint-item">
-        <button style="background-color: #b17e44;" class="button" onclick="toogle_button('bq_settings')">Show bq Whitebox 2 Settings</button>
-        <button style="background-color: #b17e44;" class="button" onclick="toogle_button('bq_settings')"><img src="../img/bq.png" alt="Go back to 3DLAB" width="100" height="100"></button>
-    </div>
-    <div class="gridprint-item">
-        <button style="background-color: #b17e44;" class="button" onclick="toogle_button('anycubic_settings')">Show Anycubic Settings</button>
-        <button style="background-color: #b17e44;" class="button" onclick="toogle_button('anycubic_settings')"><img src="../img/bq.png" alt="Go back to 3DLAB" width="100" height="100"></button>
-    </div>  
-</div>    
-
-
-<div class="div-array">
-    <div id='colido_settings'>
-        <style>
-            p {
-                color: rgb(250, 248, 255);
-                font-family: verdana;
-                font-size: 100%;}
-                </style>
-        <h1 style="color:black;text-align: center;">COLIDO X3045</h1>
-            <div class="grid-container">
-                <!--Dimension-->
-                <div class="itsetdes">Dimension</div>
-                <div class="itemX" style="color: rgb(255, 0, 0);">X <button class="btn_tb_ptr" onclick="button_clip_copy(300)">300 mm</button></div>
-                <div class="itemY" style="color: rgb(30, 255, 0);">Y <button class="btn_tb_ptr" onclick="button_clip_copy(300)">300 mm</button></div>
-                <div class="itemZ" style="color: rgb(0, 47, 255);">Z <button class="btn_tb_ptr" onclick="button_clip_copy(300)">300 mm</button></div>
-                <!--Heather Min Max-->
-                <div class="itsetprinthead">Printhead</div>
-                <div class="itemXmin" ><button class="btn_tb_ptr" onclick="button_clip_copy(-40)">-40 X min</button></button></div>
-                <div class="itemXmax" ><button class="btn_tb_ptr" onclick="button_clip_copy(60)">60 X max</button></div>
-                <div class="itemYmin" ><button class="btn_tb_ptr" onclick="button_clip_copy(-40)">-40 Y min</button></button></div>
-                <div class="itemYmax" ><button class="btn_tb_ptr" onclick="button_clip_copy(80)">80 Y max</button></div>      
+    
+    
+    <p id="colidosettings">HI</p>
+    <p>
+        <!--FIRST TABLE-->
+        
+        <div class="gridprint-container">
+            <div class="gridprint-item">
+                <button style="background-color: #b17e44;" class="button" onclick="toogle_button('colido_settings')">Show Colido Settings</button>
+                <button style="background-color: #b17e44;" class="button" onclick="toogle_button('colido_settings')"><img src="../img/bq.png" alt="Go back to 3DLAB" width="100" height="100"></button>
             </div>
+            <div class="gridprint-item">
+                <button style="background-color: #b17e44;" class="button" onclick="toogle_button('bq_settings')">Show bq Whitebox 2 Settings</button>
+                <button style="background-color: #b17e44;" class="button" onclick="toogle_button('bq_settings')"><img src="../img/bq.png" alt="Go back to 3DLAB" width="100" height="100"></button>
+            </div>
+            <div class="gridprint-item">
+                <button style="background-color: #b17e44;" class="button" onclick="toogle_button('anycubic_settings')">Show Anycubic Settings</button>
+                <button style="background-color: #b17e44;" class="button" onclick="toogle_button('anycubic_settings')"><img src="../img/bq.png" alt="Go back to 3DLAB" width="100" height="100"></button>
+            </div>  
+        </div>    
+        
+        
+        <div class="div-array">
+            <div id='colido_settings'>
+                <style>
+                    p {
+                        color: rgb(250, 248, 255);
+                        font-family: verdana;
+                        font-size: 100%;}
+                        </style>
+        <h1 style="color:black;text-align: center;">COLIDO X3045</h1>
+        <div class="grid-container">
+            <!--Dimension-->
+            <div class="itsetdes">Dimension</div>
+            <div class="itemX" style="color: rgb(255, 0, 0);">X <button class="btn_tb_ptr" onclick="button_clip_copy(300)">300 mm</button></div>
+            <div class="itemY" style="color: rgb(30, 255, 0);">Y <button class="btn_tb_ptr" onclick="button_clip_copy(300)">300 mm</button></div>
+            <div class="itemZ" style="color: rgb(0, 47, 255);">Z <button class="btn_tb_ptr" onclick="button_clip_copy(300)">300 mm</button></div>
+            <!--Heather Min Max-->
+            <div class="itsetprinthead">Printhead</div>
+            <div class="itemXmin" ><button class="btn_tb_ptr" onclick="button_clip_copy(-40)">-40 X min</button></button></div>
+            <div class="itemXmax" ><button class="btn_tb_ptr" onclick="button_clip_copy(60)">60 X max</button></div>
+            <div class="itemYmin" ><button class="btn_tb_ptr" onclick="button_clip_copy(-40)">-40 Y min</button></button></div>
+            <div class="itemYmax" ><button class="btn_tb_ptr" onclick="button_clip_copy(80)">80 Y max</button></div>      
         </div>
-
-        </table>
+    </div>
+    
+    </table>
     </div> 
+    </div>
+
+    </p>
+
 </div>
-
-</p>
-
 
 </body>
 </html>
