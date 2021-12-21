@@ -21,12 +21,14 @@
         };
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-            function writeData() {
-                firebase.database().ref("User").set({
-                    name: document.getElementById("namefield").value,
-                    age: document.getElementById("agefield").value
-                })
-            }
+        
+        function writeData() {
+            alert("ENVIANDO");
+            firebase.database().ref("User").set({
+                name: document.getElementById("namefield").value,
+                age: document.getElementById("agefield").value,
+            })
+        }
       </script>
 
     <h1>NAME</h1>
