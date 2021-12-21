@@ -4,6 +4,36 @@
     <!--CUSTOM CALENDAR LOGIC-->
     <link rel="stylesheet" type="text/css" href="../css/html_linked/calendar_html.css"/>
     <script type="text/javascript" src="../js/calendar_logic.js"></script>
+    <!---->
+        
+        
+    <script type="module">
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyDDQU2jv2GhhJ9fYzZRs0y8iGv-E6CiEp0",
+          authDomain: "dlabweb-3d9e3.firebaseapp.com",
+          projectId: "dlabweb-3d9e3",
+          storageBucket: "dlabweb-3d9e3.appspot.com",
+          messagingSenderId: "166804797053",
+          appId: "1:166804797053:web:b4bf6687b91610e54da314"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+            function writeData() {
+                firebase.database().ref("User").set({
+                    name: document.getElementById("namefield").value,
+                    age: document.getElementById("agefield").value
+                })
+            }
+      </script>
+
+    <h1>NAME</h1>
+    <input type="text" placeholder="name" id="namefield">
+    <input type="text" placeholder="age" id="agefield">
+    
+    <button onclick = "writeData()">Send</button>
 
     <!--CALENDAR STYLE-->
     <link rel="stylesheet" href="../css/evo-calendar.min.css"type="text/css" >
