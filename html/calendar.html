@@ -2,83 +2,17 @@
     <html lang="es">
 <body style="background:linear-gradient(90deg,rgb(59, 47, 66)100px,#8cb6e5 150px);"></body>
     <!--CUSTOM CALENDAR LOGIC-->
-    <link rel="stylesheet" type="text/css" href="../css/html_linked/calendar_html.css"/>
-    <script type="text/javascript" src="../js/calendar_logic.js"></script>
-    <!---->
-        
-        
-    <script type="module">
-
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-
-        const firebaseConfig = {
-          apiKey: "AIzaSyDDQU2jv2GhhJ9fYzZRs0y8iGv-E6CiEp0",
-          authDomain: "dlabweb-3d9e3.firebaseapp.com",
-          projectId: "dlabweb-3d9e3",
-          storageBucket: "dlabweb-3d9e3.appspot.com",
-          messagingSenderId: "166804797053",
-          appId: "1:166804797053:web:b4bf6687b91610e54da314"
-        };
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        
-        function writeData() {
-            alert("ENVIANDO");
-            firebase.database().ref("User").set({
-                name: document.getElementById("namefield").value,
-                age: document.getElementById("agefield").value,
-            })
-        }
-      </script>
-
-    <h1>NAME</h1>
-    <input type="text" placeholder="name" id="namefield">
-    <input type="text" placeholder="age" id="agefield">
     
-    <button onclick = "writeData()">Send</button>
-
-    <!--CALENDAR STYLE-->
-    <link rel="stylesheet" href="../css/evo-calendar.min.css"type="text/css" >
-    <link rel="stylesheet" href="../css/evo-calendar.midnight-blue.min.css"type="text/css" >
-    <link rel="stylesheet" type="text/css" href="css/evo-calendar.css"/>
-    <link rel="stylesheet" type="text/css" href="css/evo-calendar.midnight-blue.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
-
-    <div class="div_calendar">
-        <div class="hero">
-            <div id="calendar"></div>
-        </div>
-
-    <p style="margin:50px">
-
-        <button style="background-color: #b17e44;" class="button" onclick="set_event('Reserva','yo')">Show bq Whitebox 2 Settings</button>
-    </p>
-
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    <script src="../js/evo-calendar.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#calendar').evoCalendar({
-                theme: 'Midnight Blue',
-            });            
-            })
-    </script>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 <script src="../js/sidebar.js" type="text/javascript" defer></script>
 
-</script>
-</script>
-</script> 
-
-</p>
+<link rel="stylesheet" type="text/css" href="../css/css_side.css"/>
+<div class="div_side">
+    
+    <p style="margin:50px">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%2382d3ff&ctz=Europe%2FMadrid&showTz=0&src=M2RsYWJAdWNtLmVz&src=Y182djVyZ3VrNDdyNm00c2g0NWs5bDE5MDhza0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y192NHUwbGNkMTBhbGo0NDI0NTVkNjI2MjkxZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19uMHQ2dHRmZGhrc3JhbGswaHZxMXVuMXF1b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y18zczUzYzg5NnZxdGNmMWI2YXV1NWduM2xkOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19wNjJkbWpqZTM5MTc0Yms0a3FuOWNhZ2RqZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y185dW5nZnNpNGFrcmFxazR0ZmxhZDEzMjd1Z0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y18ydDBqMG80OXBvbHZxc2hnOTZicnYxMWQ0a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%23F09300&color=%23B39DDB&color=%239E69AF&color=%23616161&color=%234285F4&color=%23F09300&color=%239E69AF" 
+        style="border:solid 1px #8cb6e5" width="1600" height="900" frameborder="0" scrolling="no"></iframe>
+    </p>
+</div>
 
 </body>
 </html>
