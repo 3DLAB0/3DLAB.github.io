@@ -175,8 +175,8 @@ margin: 30px;
 .grid-container > div {
   background-color: rgba(141, 120, 81, 0.8);
   text-align: center;
-  padding: 10px 0;
-  font-size: 20px;
+  padding: 0px 0;
+  font-size: 5px;
 }
 
 
@@ -185,17 +185,17 @@ margin: 30px;
     display: grid;
     grid-gap: 20px 20px;
     grid-template-columns: auto auto;
-    background-color: #ff6600;
-    padding: 4px;
-    float:left ;
+    background-color: #655071;
+    padding: 20px;
+    float:center;
     width: auto;
   }
   
 .gridprint-item {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 4px solid rgba(53, 30, 55, 0.8);
     padding: 4px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
 
