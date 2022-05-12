@@ -178,17 +178,31 @@ margin: 30px;
   padding: 0px 0;
   font-size: 5px;
 }
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
 /*GRID_PRINTER*/
 .gridprint-container {
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    background-color: #655071;
+    padding: 20px;
+    float:center;
+    width: auto;
+  }
+  .gridprint-container-duo {
     display: grid;
     grid-gap: 20px 20px;
     grid-template-columns: auto auto;
     background-color: #655071;
     padding: 20px;
     float:center;
-    width: auto;
   }
   
 .gridprint-item {
