@@ -222,3 +222,26 @@ margin: 30px;
     font-family: 'Roboto', sans-serif;
     transform: translate(-50%,-50%);
 }
+.software-container {
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    /*background-color: #655071;*/
+    padding: 20px;
+    float:center;
+    width: auto;
+}
+.software-item {
+    /*background-color: rgba(255, 255, 255, 0.8);
+    /*border: 4px solid rgba(53, 30, 55, 0.8);*/
+    padding: 4px;
+    font-size: 20px;
+    text-align: center;
+}
+.software-2d-item {
+    background-color: rgba(105, 139, 167, 0.267)4;
+    padding: 4px;
+    font-size: 20px;
+    text-align: center;
+}
