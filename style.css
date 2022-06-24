@@ -137,7 +137,7 @@ nav ul {
     width: 100%;
     padding: 5px 5px;
     font-size: 16px;}    
-}
+
 .inner_array {
     width: 20em;
     height: 300em;
@@ -191,7 +191,7 @@ margin: 30px;
     grid-gap: 20px 20px;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto auto;
-    background-color: #655071;
+    /*background-color: #655071;*/
     padding: 20px;
     float:center;
     width: auto;
@@ -206,8 +206,8 @@ margin: 30px;
   }
   
 .gridprint-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 4px solid rgba(53, 30, 55, 0.8);
+    /*background-color: rgba(255, 255, 255, 0.8);
+    /*border: 4px solid rgba(53, 30, 55, 0.8);*/
     padding: 4px;
     font-size: 20px;
     text-align: center;
