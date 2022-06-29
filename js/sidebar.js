@@ -12,7 +12,7 @@ template.innerHTML = `
         <a href="/html/printing.html">
             <img src="../img/log/3dprint_w.png" alt="Go to resources" width="50" height="50">
         </a>
-        <a href="/index.html">
+        <a href="/html/resources.html">
             <img src="../img/log/resources_w.png" alt="Go to resources" width="50" height="50">
         </a>    
     </div>
