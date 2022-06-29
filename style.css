@@ -225,8 +225,8 @@ margin: 30px;
 .software-container {
     display: grid;
     grid-gap: 20px 20px;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
     /*background-color: #655071;*/
     padding: 20px;
     float:center;
@@ -245,3 +245,63 @@ margin: 30px;
     font-size: 20px;
     text-align: center;
 }
+.software-game-item {
+    background-color: rgba(105, 139, 167, 0.267)4;
+    padding: 4px;
+    font-size: 20px;
+    text-align: center;
+}
+.div_side { 
+    position: absolute;
+    height: 100%; 
+    width: 70%; 
+    left: 150px; 
+}
+@media only screen and (min-width: 800px) {
+    .software-container {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+    }
+    .div_side {width: 80%;}
+    }
+@media only screen and (min-width: 900px) {
+    .software-container {
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto;
+    }
+    .div_side {width: 80%;}
+    }
+@media only screen and (min-width: 1100px) {
+    .software-container {
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    }
+    .div_side {width: 88%;}
+  }
+@media only screen and (min-width: 2000px) {
+    .software-container {
+        display: grid;
+        grid-gap: 20px 20px;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+        /*background-color: #655071;*/
+        padding: 20px;
+        float:center;
+        width: auto;
+        
+  }
+  .div_side {width: 90%;}
+}
+  @media only screen and (min-width: 2200px) {
+    .software-container {
+        display: grid;
+        grid-gap: 20px 20px;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        /*background-color: #655071;*/
+        padding: 20px;
+        float:center;
+        width: auto;
+    }
+    .div_side {width: 93%;}
+  }
